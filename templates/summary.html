@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+Data Set Summary
+
+{% endblock %}
+
+{% block content %}
+
+
+<h1>Data Set Summary</h1>
+<h3>dataset</h3>
+<p>{{filename}}</p>
+<div>
+    NO of rows {{rows}}
+    <br>
+    No of columns {{columns}}
+</div>
+<div>
+<h2>First 10 rows </h2>
+    {{preview|safe}}
+</div>
+<h4>Categorical Columns</h4>
+
+<ul>
+    {% for col in cat_cols %}
+        <li>{{ col }}</li>
+    {% endfor %}
+</ul>
+
+<p class="lead">
+    Dataset uploaded successfully.
+</p>
+
+
+
+{% endblock %}

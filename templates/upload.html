@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+UPLOAD
+{% endblock %}
+
+{% block content %}
+
+<label>UPLOAD FILE</label>
+
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" required>
+    <button class="btn btn-success" type="submit">
+        Upload Dataset
+    </button>
+</form>
+
+{% endblock %}
