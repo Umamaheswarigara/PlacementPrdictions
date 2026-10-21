@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# PyCharm
+.idea/
+
+# Processed / uploaded data (generated at runtime)
+processed/
+uploads/
+
+# Artifacts / model files (large binaries)
+artifacts/
+
+# Reference data (can be regenerated)
+reference_data/
+
+# Monitoring cache
+monitoring/__pycache__/
+placement/__pycache__/
+
+# Misc
+*.log
+*.tmp
+-remote origin
